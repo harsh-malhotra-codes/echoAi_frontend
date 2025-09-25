@@ -1,0 +1,8 @@
+{
+  "routes": [
+    {
+      "src": "/api/(.*)",
+      "dest": "https://YOUR-BACKEND-SERVICE.onrender.com/api/$1"
+    }
+  ]
+}
