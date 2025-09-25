@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <radialGradient id="g" cx="50%" cy="50%" r="60%">
+      <stop offset="0%" stop-color="#7dd3fc"/>
+      <stop offset="60%" stop-color="#3b82f6"/>
+      <stop offset="100%" stop-color="#1e3a8a"/>
+    </radialGradient>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="1.5" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  <rect width="64" height="64" rx="12" fill="#0b1020"/>
+  <!-- Planet -->
+  <circle cx="32" cy="34" r="14" fill="url(#g)" filter="url(#glow)"/>
+  <!-- Ring -->
+  <ellipse cx="32" cy="34" rx="22" ry="7" fill="none" stroke="#93c5fd" stroke-width="2" opacity="0.9" transform="rotate(-15 32 34)"/>
+  <!-- Stars -->
+  <g fill="#ffffff">
+    <circle cx="10" cy="14" r="1.2"/>
+    <circle cx="54" cy="12" r="1"/>
+    <circle cx="50" cy="48" r="1.1"/>
+    <circle cx="14" cy="50" r="0.9"/>
+    <circle cx="40" cy="8" r="0.8"/>
+  </g>
+</svg>
