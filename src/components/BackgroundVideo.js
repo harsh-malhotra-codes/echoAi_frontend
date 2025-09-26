@@ -11,7 +11,7 @@ const BackgroundVideo = () => {
         playsInline
         preload="auto"
       >
-        <source src="/vid d2 hd.mp4" type="video/mp4" />
+        <source src="/vid_d2_hd.mp4" type="video/mp4" />
         {/* Fallback text */}
         Your browser does not support the video tag.
       </video>
