@@ -13,7 +13,7 @@ const sanitizeText = (text = '') => {
   t = t.replace(/[\t ]+/g, ' ');
   t = t.replace(/\n{3,}/g, '\n\n');
   // Trim stray leading/trailing symbols and spaces
-  t = t.replace(/^[^\p{L}\p{N}()\[\]{}'"\-]+/u, '').replace(/[^\p{L}\p{N})\]\}'".!?\-]+$/u, '');
+  t = t.replace(/^[^\p{L}\p{N}()[\]{}'"\-]+/u, '').replace(/[^\p{L}\p{N})\]\}'".!?\-]+$/u, '');
   return t.trim();
 };
 
